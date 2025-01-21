@@ -6,8 +6,8 @@ import streamlit as st
 # Load MovieLens dataset
 @st.cache_data
 def load_data():
-    movies = pd.read_csv('https://files.grouplens.org/datasets/movielens/ml-latest-small/movies.csv')
-    ratings = pd.read_csv('https://files.grouplens.org/datasets/movielens/ml-latest-small/ratings.csv')
+    movies = pd.read_csv('./movies.csv')
+    ratings = pd.read_csv('./ratings.csv')
     return movies, ratings
 
 movies, ratings = load_data()
