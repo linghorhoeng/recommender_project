@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recommendations</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Recommended Movies</h1>
+    {% for movie in recommendations %}
+        <div class="movie-card">
+            <h3><a href="/movie/{{ movie['id'] }}">{{ movie['title'] }}</a></h3>
+            <p>Predicted Rating: {{ movie['predicted_rating'] | round(2) }}</p>
+        </div>
+    {% endfor %}
+    <a href="/">Back to Home</a>
+</body>
+</html>

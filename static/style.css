@@ -1,0 +1,7 @@
+body { font-family: Arial, sans-serif; background: #111; color: #fff; }
+h1, h2 { text-align: center; }
+.movie-card { background: #222; padding: 15px; margin: 10px auto; width: 80%; border-radius: 10px; transition: 0.3s; }
+.movie-card:hover { background: #333; transform: scale(1.02); }
+a { color: #4db8ff; text-decoration: none; }
+button { padding: 10px 20px; background: #4db8ff; color: white; border: none; border-radius: 5px; }
+input { padding: 10px; margin: 10px; }
